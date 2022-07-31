@@ -1,3 +1,74 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "indent": 0,
+    "quotes": 0,
+    "import/no-unresolved": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "comma-dangle": 0,
+    "spaced-comment": 0, // TS NO-USED FIX
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.spec.ts",
+          "**/*.test.tsx",
+          "**/*.spec.tsx",
+          "cypress.config.ts",
+          "cypress.d.ts",
+          "**/*.cy.ts",
+          "**/*.cy.tsx"
+        ]
+      }
+    ],
+    // TS NO-SHADOW FIX
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "@typescript-eslint/ban-types": 0,
+    // DISABLE FOR TS errors
+    "no-undef": "off",
+    "linebreak-style": 0,
+    "arrow-body-style": ["warn", "as-needed"],
+    "implicit-arrow-linebreak": 0,
+    "function-paren-newline": 0,
+    "object-curly-newline": 0,
+    "operator-linebreak": 0,
+    "testing-library/no-render-in-setup": "warn",
+    "testing-library/no-unnecessary-act": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/function-component-definition": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/no-unescaped-entities": 0,
+    "react/require-default-props": 0,
+    "react/jsx-curly-newline": 0,
+    "react/jsx-no-comment-textnodes": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/no-noninteractive-tabindex": 0
+  }
 }
