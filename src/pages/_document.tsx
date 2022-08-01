@@ -12,6 +12,7 @@ class MyDocument extends Document {
       <Html lang="uk">
         <Head>
           <link rel="icon" href="/favicon.ico" />
+          {/* preload most needed fonts and resources */}
           <link
             rel="preload"
             href="/fonts/Poppins/woff2/Poppins-Regular.woff2"
