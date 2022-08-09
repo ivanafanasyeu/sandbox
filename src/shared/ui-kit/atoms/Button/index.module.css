@@ -1,0 +1,117 @@
+.btn {
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-sizing: border-box;
+  border: 1px solid;
+  width: fit-content;
+  cursor: pointer;
+  min-height: 40px;
+  user-select: none;
+
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  transition: all 0.25s ease;
+  box-shadow: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn--xs {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  min-height: 32px;
+}
+
+.btn[data-iconposition='before'] > svg {
+  margin-right: 8px;
+}
+.btn[data-iconposition='after'] > svg {
+  margin-left: 8px;
+}
+
+.btn-primary {
+  background-color: var(--sandbox-main);
+  color: var(--sandbox-white);
+  border-color: var(--sandbox-main);
+}
+.btn-primary:disabled {
+  background-color: var(--sandbox-main--lighter);
+  border-color: var(--sandbox-main--lighter);
+  pointer-events: none;
+}
+.btn-primary:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+.btn-primary:active {
+  box-shadow: var(--active-inner-shadow);
+}
+.btn-primary[data-actionmood='positive'],
+.btn-primary[data-actionmood='positive']:hover,
+.btn-primary[data-actionmood='positive']:active {
+  border-color: var(--sandbox-success);
+  color: var(--sandbox-white);
+  background-color: var(--sandbox-success);
+}
+.btn-primary[data-actionmood='negative'],
+.btn-primary[data-actionmood='negative']:hover,
+.btn-primary[data-actionmood='negative']:active {
+  border-color: var(--sandbox-error);
+  color: var(--sandbox-white);
+  background-color: var(--sandbox-error);
+}
+
+.btn-secondary {
+  border-color: var(--sandbox-main);
+  background-color: var(--sandbox-white);
+  color: var(--sandbox-main);
+}
+.btn-secondary:disabled {
+  border-color: var(--sandbox-main--lighter);
+  color: var(--sandbox-main--lighter);
+  pointer-events: none;
+}
+.btn-secondary:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+.btn-secondary:active {
+  box-shadow: var(--active-inner-shadow);
+}
+.btn-secondary[data-actionmood='positive'],
+.btn-secondary[data-actionmood='positive']:hover,
+.btn-secondary[data-actionmood='positive']:active {
+  border-color: var(--sandbox-success);
+  background-color: var(--sandbox-white);
+  color: var(--sandbox-success);
+}
+.btn-secondary[data-actionmood='negative'],
+.btn-secondary[data-actionmood='negative']:hover,
+.btn-secondary[data-actionmood='negative']:active {
+  border-color: var(--sandbox-error);
+  background-color: var(--sandbox-white);
+  color: var(--sandbox-error);
+}
+
+.btn-tertiary {
+  border: none;
+  color: var(--sandbox-black);
+}
+.btn-tertiary:hover {
+  box-shadow: var(--alternative-box-shadow);
+}
+.btn-tertiary:disabled {
+  color: var(--sandbox-grey2);
+  pointer-events: none;
+}
+.btn-tertiary[data-actionmood='positive'],
+.btn-tertiary[data-actionmood='positive']:hover,
+.btn-tertiary[data-actionmood='positive']:active {
+  color: var(--sandbox-success);
+}
+.btn-tertiary[data-actionmood='negative'],
+.btn-tertiary[data-actionmood='negative']:hover,
+.btn-tertiary[data-actionmood='negative']:active {
+  color: var(--sandbox-error);
+}

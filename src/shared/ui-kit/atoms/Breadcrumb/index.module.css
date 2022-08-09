@@ -1,0 +1,13 @@
+.indicator {
+  display: block;
+  width: 43px;
+  height: 7px;
+  background: var(--sandbox-bg--light);
+  border: 1px solid;
+  border-color: var(--sandbox-main--lighter);
+  border-radius: 3.5px;
+}
+.indicator[data-current='true'] {
+  border-color: var(--sandbox-main);
+  background-color: var(--sandbox-main);
+}

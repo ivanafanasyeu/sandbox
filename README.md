@@ -9,3 +9,10 @@
 - fonts and css global practices
 - best table practices (...in progress)
 - useful articles (...in progress)
+
+## Installation
+
+```ps1
+# Install tests for next.js with swc (rust) compiler
+yarn add jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom -D
+```

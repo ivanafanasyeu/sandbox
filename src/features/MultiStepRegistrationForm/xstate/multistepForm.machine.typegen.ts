@@ -19,14 +19,14 @@ export interface Typegen0 {
   eventsCausingGuards: {};
   eventsCausingDelays: {};
   matchesStates:
-    | 'bioform'
     | 'addressform'
+    | 'bioform'
     | 'documentsform'
     | 'paymentform'
     | 'paymentform.paymentinfo'
     | 'paymentform.paymentprocess'
-    | 'sending'
     | 'result'
+    | 'sending'
     | { paymentform?: 'paymentinfo' | 'paymentprocess' };
   tags: never;
 }
