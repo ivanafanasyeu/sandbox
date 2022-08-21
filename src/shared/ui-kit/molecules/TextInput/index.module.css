@@ -1,0 +1,41 @@
+.relativewrap {
+	position: relative;
+	/* Input height */
+	height: 40px;
+}
+.leadingicon {
+	position: absolute;
+}
+.trailingicon {
+	position: absolute;
+}
+.input {
+	position: relative;
+	border: 1px solid;
+	box-sizing: border-box;
+	border-color: #cccccc;
+	background-color: #ffffff;
+	height: 100%;
+	width: 100%;
+	padding: 0 16px 0 16px;
+	border-radius: 8px;
+	font-size: 1rem;
+	color: #000000;
+	outline: none;
+}
+.input::placeholder {
+	color: rgba(0, 0, 0, 50%);
+}
+.input:focus,
+.input:focus-visible {
+	border-color: #000000;
+	border-width: 1px;
+}
+.input:disabled {
+	background-color: #eef1f5;
+	pointer-events: none;
+}
+.input[aria-invalid="true"] {
+	border-color: #f6036f;
+	color: #000000;
+}

@@ -1,0 +1,33 @@
+.fieldbox {
+  position: relative;
+}
+.label {
+  display: block;
+  margin: 0 0 0.25rem 0;
+  color: var(--sandbox-black);
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.label[data-hiddenlabel='true'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.validation-message {
+  position: absolute;
+  top: calc(100% + 2px);
+  color: var(--sandbox-main);
+  font-size: 0.875rem;
+}
+.validation-message[data-iserror='true'] {
+  color: var(--sandbox-error);
+}
+.validation-message[data-issuccess='true'] {
+  color: var(--sandbox-success);
+}
